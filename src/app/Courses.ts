@@ -53,4 +53,6 @@ export class Courses {
     getGradePoint(){
         return this.gradePoint;
     }
+
+    
 }

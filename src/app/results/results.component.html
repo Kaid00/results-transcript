@@ -1,0 +1,16 @@
+
+<h2></h2>
+<div>
+    <table>
+        <tr>
+          <th *ngFor = "let column of headers">
+            {{column}}
+          </th>
+        </tr>
+        <tr>
+            <td *ngFor = "let column of studentData">
+                {{column.coursesArray[column]}}
+            </td>
+        </tr>
+    </table>
+</div>

@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { StudentComponent } from './dashboard/student.component';
 import { StudentDetailsComponent } from './student-details/student-details.component';
 import { ResultsComponent } from './results/results.component';
+import { StudentInfoComponent } from './student-info/student-info.component';
 
 
 
@@ -16,7 +17,8 @@ import { ResultsComponent } from './results/results.component';
     AppComponent,
     StudentComponent,
     StudentDetailsComponent,
-    ResultsComponent
+    ResultsComponent,
+    StudentInfoComponent
   
   ],
   imports: [

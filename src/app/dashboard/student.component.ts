@@ -32,6 +32,15 @@ export class StudentComponent implements OnInit {
       .subscribe(studentData => this.studentData = studentData);
   }
 
+  getCourseInfo(): void{
+    this.studentService.getStudent()
+      .subscribe(studentData => this.studentData = studentData);
+  }
+
+  // getGpavalues(){
+  //   this.
+  // }
+
   ngOnInit(): void {
     // Initialise the function when the dashboard component is intanciated
     this.getStudentData();

@@ -30,15 +30,20 @@ export const StudentData:Students[] = [
     onefirst, oneSecond, oneThird, oneFourth
 ]; 
 
-// const courseOne = new Courses("CSC 207",4,55);
-// const courseTwo = new Courses("CSC 207",4,55);
-// const courseThree = new Courses("CSC 207",4,55);
-// const courseFour = new Courses("CSC 207",4,55);
-// const courseFive = new Courses("CSC 207",4,55);
+export const CalGpa = function(): number{
+    //Run through the student data array
+    for(let i = 0; i < StudentData.length; i++) {
+
+      return  StudentData[i].calGPA();
+
+        
+    }
+   
+}
 
 
-// export const StudentCourses:Courses[] = [
- 
-// ]
-
-
+ //enter each student data array object and run through it to call on the fucntions for calculating GPA
+   
+    // for(let j = 0; j < StudentData[i].coursesArray.length; j++) {
+        //     j
+        // }

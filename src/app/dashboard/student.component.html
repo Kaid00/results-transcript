@@ -9,7 +9,9 @@
         </a> -->
         <ul class="students">
             <!-- <a  routerLink="/student"> -->
-                <li *ngFor="let studentData of studentData" (click)="onSelect(studentData)">{{studentData.studentName}}</li>
+                <li *ngFor="let studentData of studentData" (click)="onSelect(studentData)"><span>GPA: </span><div>{{studentService.getGPA()}}</div>{{studentData.studentName}}</li>
+
+
             <!-- </a>  -->
         </ul>
         
@@ -20,4 +22,4 @@
 
 <!--One way binding between dasboard component and student-details component-->
 <app-student-details [student] = "selectedStudent"></app-student-details>
-
+<!-- <app-student-info [select] = "selectedStudent"></app-student-info> -->

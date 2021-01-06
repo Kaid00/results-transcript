@@ -3,7 +3,10 @@
 <!--Display selected student name & mat number details-->
 <div class="details" *ngIf="student">
     <div><h2 id="name">{{student.studentName}} Details</h2></div>
-    <div class="info"><span>name: </span>{{student.studentName}}</div>
-    <div class="info"><span>mat: </span>{{student.matNumber}}</div>
+    <div class="info"><span>Name: </span>{{student.studentName}}</div>
+    <div class="info"><span>Mat: </span>{{student.matNumber}}</div>
     
+    <nav id="results">
+        <a routerLink="/details">Transcript</a>
+    </nav>
 </div>

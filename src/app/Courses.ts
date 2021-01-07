@@ -1,5 +1,5 @@
+import { Students } from './Students';
 import { ClassMethod } from "@angular/compiler";
-
 
 export class Courses {
     courseCode:string;
@@ -54,5 +54,6 @@ export class Courses {
         return this.gradePoint;
     }
 
+    
     
 }

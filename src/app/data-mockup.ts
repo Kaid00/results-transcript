@@ -16,13 +16,13 @@ const oneSecond = new Students(
 
 const oneThird = new Students(
         "SC18A424", "Katakuri", [
-            new Courses("CSC 205", 6, 80), new Courses("CSC 207",4,55), new Courses("CSC 209",6,66), new Courses("CSC 211",4,30), new Courses("MAT 201",6,64), new Courses("ENG 101",2,29), new Courses("FRE 101",2,64), new Courses("CVE 100",4,59)
+            new Courses("CSC 205", 6, 20), new Courses("CSC 207",4,55), new Courses("CSC 209",6,66), new Courses("CSC 211",4,30), new Courses("MAT 201",6,0), new Courses("ENG 101",2,29), new Courses("FRE 101",2,64), new Courses("CVE 100",4,59)
         ]
     );
 
 const oneFourth = new Students(
         "SC18A480", "Kaido", [
-            new Courses("CSC 205", 6, 80), new Courses("CSC 207",4,55), new Courses("CSC 209",6,66), new Courses("CSC 211",4,30), new Courses("MAT 201",6,64), new Courses("ENG 101",2,29), new Courses("FRE 101",2,64), new Courses("CVE 100",4,59)
+            new Courses("CSC 205", 6, 4), new Courses("CSC 207",4,55), new Courses("CSC 209",6,66), new Courses("CSC 211",4,30), new Courses("MAT 201",6,64), new Courses("ENG 101",2,0), new Courses("FRE 101",2,64), new Courses("CVE 100",4,59)
         ]
 );
 
@@ -30,12 +30,12 @@ export const StudentData:Students[] = [
     onefirst, oneSecond, oneThird, oneFourth
 ]; 
 
-export const CalGpa = function(): number{
+export const CalGpa = function(): void{
     //Run through the student data array
     for(let i = 0; i < StudentData.length; i++) {
 
-      return  StudentData[i].calGPA();
-
+        StudentData[i].calGPA();
+    //    StudentData[i].getCcode();
         
     }
    

@@ -8,7 +8,8 @@ import {StudentDetailsComponent} from './student-details/student-details.compone
 
 const routes: Routes = [
   { path: 'student', component: StudentComponent },
-  { path: 'details', component: StudentInfoComponent}
+  { path: 'details', component: StudentInfoComponent},
+  { path: 'infor', component: StudentDetailsComponent}
 ];
 
 @NgModule({

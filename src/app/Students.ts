@@ -10,6 +10,9 @@ export class Students {
     sumCreditVal:number;
     GPA:number;
 
+    Course:Courses;
+    
+
     constructor(matNum:string, studName:string, courseAry:Courses[]){
         
         this.matNumber = matNum;
@@ -39,6 +42,57 @@ export class Students {
      calGPA(){
        this.calSumCreditVal();
        this.calSumCoursePt();
-        return this.GPA = this.sumCoursePt / this.sumCreditVal;
+        this.GPA = this.sumCoursePt / this.sumCreditVal;
+        return this.GPA.toFixed(2);
      }
+
+
+// Get Course Code 
+    // getCourseCode() {
+    //     // for(let i = 0; i < this.coursesArray.length; i++) {
+
+    //     //     this.things = [this.coursesArray[i]];
+           
+    //     // }
+    //     // return this.things;
+
+    // }
+
+    getCCode1(){
+         return this.Course = this.coursesArray[0];
+    }
+
+    getCCode2(){
+        return this.Course = this.coursesArray[1];
+    }
+
+    getCCode3(){
+        return this.Course = this.coursesArray[2];
+    }
+
+    getCCode4(){
+        return this.Course = this.coursesArray[3];
+    }
+
+    getCCode5(){
+        return this.Course = this.coursesArray[4];
+    }
+
+    getCCode6(){
+        return this.Course = this.coursesArray[5];
+    }
+
+    getCCode7(){
+        return this.Course = this.coursesArray[6];
+    }
+
+    getCCode8(){
+        return this.Course = this.coursesArray[7];
+    }
+   
+        
 }
+
+
+
+

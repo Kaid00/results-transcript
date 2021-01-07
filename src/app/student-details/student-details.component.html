@@ -2,10 +2,96 @@
 
 <!--Display selected student name & mat number details-->
 <div class="details" *ngIf="student">
+
     <div><h2 id="name">{{student.studentName}} Details</h2></div>
     <div class="info"><span>Name: </span>{{student.studentName}}</div>
     <div class="info"><span>Mat: </span>{{student.matNumber}}</div>
-    
+
+    <!-- <div *ngFor ="let i of student">
+        <div *nFor="let j of i.courseArray.length">
+            {{i.courseArray[j].courseCode}}
+        </div>
+    </div> -->
+
+    <div>
+        <table class="table">
+            <tr>
+                <th>Course</th>
+                <th>Cred-Value</th>
+                <th>Score</th>
+                <th>Let-Grade</th>
+                <th>Grade Points</th>
+                <th>Course Points</th>
+            </tr>
+            <tr>
+               <td>{{student.getCCode1().courseCode}}</td> 
+               <td>{{student.getCCode1().creditValue}}</td>
+               <td>{{student.getCCode1().score}}</td>
+               <td>{{student.getCCode1().letterGrade}}</td>
+               <td>{{student.getCCode1().gradePoint}}</td>
+               <td>{{student.getCCode1().coursePoint}}</td>
+            </tr>
+            <tr>
+                <td>{{student.getCCode2().courseCode}}</td> 
+                <td>{{student.getCCode2().creditValue}}</td>
+                <td>{{student.getCCode2().score}}</td>
+                <td>{{student.getCCode2().letterGrade}}</td>
+                <td>{{student.getCCode2().gradePoint}}</td>
+                <td>{{student.getCCode2().coursePoint}}</td>
+             </tr>
+             <tr>
+                <td>{{student.getCCode2().courseCode}}</td> 
+                <td>{{student.getCCode2().creditValue}}</td>
+                <td>{{student.getCCode2().score}}</td>
+                <td>{{student.getCCode2().letterGrade}}</td>
+                <td>{{student.getCCode2().gradePoint}}</td>
+                <td>{{student.getCCode2().coursePoint}}</td>
+             </tr>
+             <tr>
+                <td>{{student.getCCode3().courseCode}}</td> 
+                <td>{{student.getCCode3().creditValue}}</td>
+                <td>{{student.getCCode3().score}}</td>
+                <td>{{student.getCCode3().letterGrade}}</td>
+                <td>{{student.getCCode3().gradePoint}}</td>
+                <td>{{student.getCCode3().coursePoint}}</td>
+             </tr>
+             <tr>
+                <td>{{student.getCCode4().courseCode}}</td> 
+                <td>{{student.getCCode4().creditValue}}</td>
+                <td>{{student.getCCode4().score}}</td>
+                <td>{{student.getCCode4().letterGrade}}</td>
+                <td>{{student.getCCode4().gradePoint}}</td>
+                <td>{{student.getCCode4().coursePoint}}</td>
+             </tr>
+             <tr>
+                <td>{{student.getCCode5().courseCode}}</td> 
+                <td>{{student.getCCode5().creditValue}}</td>
+                <td>{{student.getCCode5().score}}</td>
+                <td>{{student.getCCode5().letterGrade}}</td>
+                <td>{{student.getCCode5().gradePoint}}</td>
+                <td>{{student.getCCode5().coursePoint}}</td>
+             </tr>
+             <tr>
+                <td>{{student.getCCode6().courseCode}}</td> 
+                <td>{{student.getCCode6().creditValue}}</td>
+                <td>{{student.getCCode6().score}}</td>
+                <td>{{student.getCCode6().letterGrade}}</td>
+                <td>{{student.getCCode6().gradePoint}}</td>
+                <td>{{student.getCCode6().coursePoint}}</td>
+             </tr>
+             <tr>
+                <td>{{student.getCCode7().courseCode}}</td> 
+                <td>{{student.getCCode7().creditValue}}</td>
+                <td>{{student.getCCode7().score}}</td>
+                <td>{{student.getCCode7().letterGrade}}</td>
+                <td>{{student.getCCode7().gradePoint}}</td>
+                <td>{{student.getCCode7().coursePoint}}</td>
+             </tr>
+        </table>
+    </div>
+
+    <div class="info"><span>GPA: </span>{{student.calGPA()}}</div>
+
     <nav id="results">
         <a routerLink="/details">Transcript</a>
     </nav>

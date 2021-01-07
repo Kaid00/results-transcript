@@ -23,25 +23,14 @@ export class StudentService {
     return of ();
   }
 
-  // getGPA(): Observable<Students> {
-  //   return of(CalGpa);
-  // }
-
-  // getGPA() {
-  //   return CalGpa();
-  // }
-
-  getGPA() {
-    
-      //Run through the student data array
-      for(let i = 0; i < StudentData.length; i++) {
   
-        return  StudentData[i].calGPA();
-  
-          
-      }
-     
-     
+
+
+  getSumCoursePt() {
+    for (let i = 0; i < 4; i++) {
+      StudentData[i].sumCoursePt
+    }
   }
+
   
 }

@@ -1,17 +1,10 @@
 
-
 <!--Display selected student name & mat number details-->
 <div class="details" *ngIf="student">
 
     <div><h2 id="name">{{student.studentName}} Details</h2></div>
     <div class="info"><span>Name: </span>{{student.studentName}}</div>
     <div class="info"><span>Mat: </span>{{student.matNumber}}</div>
-
-    <!-- <div *ngFor ="let i of student">
-        <div *nFor="let j of i.courseArray.length">
-            {{i.courseArray[j].courseCode}}
-        </div>
-    </div> -->
 
     <div>
         <table class="table">

@@ -9,22 +9,11 @@
         </a> -->
         <ul class="students">
             <!-- <a  routerLink="/student"> -->
-                <li *ngFor="let studentData of studentData" (click)="onSelect(studentData)">
-                    
+                <li *ngFor="let studentData of studentData" (click)="onSelect(studentData)"> 
                     <div>
                         {{studentData.studentName}}
                     </div>
-            
-                    <div>
-                        <span>Course point sum: </span>{{studentData.calSumCoursePt()}}
-                    </div>
-                    <div>
-                        <span>Credit value sum: </span>{{studentData.calSumCreditVal()}}
-                    </div>
-                
                 </li>
-                
-
             <!-- </a>  -->
         </ul>
        

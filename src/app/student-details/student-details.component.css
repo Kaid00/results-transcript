@@ -36,14 +36,15 @@ nav a.active {
 
 .table {
   border-collapse: collapse;
-  width: 50%;
+  width: 100%;
   margin-top: 20px;
 }
 
 .table td,
 .table th {
   border: 1px solid #ddd;
-  padding: 8px;
+  padding: 10px;
+  width: auto;
 }
 
 .table tr:nth-child(even) {

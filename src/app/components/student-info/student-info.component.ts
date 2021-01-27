@@ -1,8 +1,8 @@
 
 import { Component, OnInit, Input } from '@angular/core';
 
-import { Students } from '../Students';
-import { StudentService } from '../student.service';
+import { Students } from './../../data/Students';
+import { StudentService } from './../../services/student.service';
 import {StudentComponent} from '../dashboard/student.component';
 
 @Component({

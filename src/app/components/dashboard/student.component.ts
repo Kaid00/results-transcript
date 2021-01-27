@@ -1,10 +1,8 @@
 
 import { Component, OnInit } from '@angular/core';
 
-import { Students } from '../Students';
-import { StudentService } from '../student.service';
-
-
+import { Students } from './../../data/Students';
+import { StudentService } from './../../services/student.service';
 
 @Component({
   selector: 'app-dashbaord',
@@ -31,12 +29,7 @@ export class StudentComponent implements OnInit {
     this.studentService.getStudent()
       .subscribe(studentData => this.studentData = studentData);
   }
-
-  getCourseInfo(): void{
-    this.studentService.getStudent()
-      .subscribe(studentData => this.studentData = studentData);
-  }
-
+  
   // Getting Gpa array from service
 
   ngOnInit(): void {
@@ -44,8 +37,6 @@ export class StudentComponent implements OnInit {
     this.getStudentData();
     
   }
-
-
 
 }
 

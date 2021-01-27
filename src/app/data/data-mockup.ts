@@ -35,15 +35,7 @@ export const CalGpa = function(): void{
     for(let i = 0; i < StudentData.length; i++) {
 
         StudentData[i].calGPA();
-    //    StudentData[i].getCcode();
-        
     }
    
 }
 
-
- //enter each student data array object and run through it to call on the fucntions for calculating GPA
-   
-    // for(let j = 0; j < StudentData[i].coursesArray.length; j++) {
-        //     j
-        // }

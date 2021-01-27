@@ -1,4 +1,4 @@
-import { Students } from '../Students';
+import { Students } from './../../data/Students';
 import { Component, OnInit, Input } from '@angular/core';
 
 

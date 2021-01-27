@@ -1,12 +1,6 @@
 
 <!--printing student names-->
 <div class="grid grid-pad">
-    
-        <!-- <a *ngFor="let studentData of studentData" routerLink="/details/{{studentData.studentName}}">
-            <div class="module hero">
-                {{studentData.studentName}}
-            </div>
-        </a> -->
         <ul class="students">
             <!-- <a  routerLink="/student"> -->
                 <li *ngFor="let studentData of studentData" (click)="onSelect(studentData)"> 
@@ -16,13 +10,8 @@
                 </li>
             <!-- </a>  -->
         </ul>
-       
-      
-     
-        
-   
+
 </div>
 
 <!--One way binding between dasboard component and student-details component-->
 <app-student-details [student] = "selectedStudent"></app-student-details>
-<!-- <app-student-info [select] = "selectedStudent"></app-student-info> -->

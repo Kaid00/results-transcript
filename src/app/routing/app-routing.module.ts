@@ -7,9 +7,13 @@ import {StudentInfoComponent} from '../components/student-info/student-info.comp
 import {StudentDetailsComponent} from '../components/student-details/student-details.component';
 
 const routes: Routes = [
-  { path: 'student', component: StudentComponent },
+  { path: '', redirectTo: 'student', pathMatch: 'full' },
+  { path: 'student', component: StudentComponent,
+  children: [{ path: 'transcript', component: StudentDetailsComponent}]  
+  },
   { path: 'details', component: StudentInfoComponent},
-  { path: 'infor', component: StudentDetailsComponent}
+  
+  
 ];
 
 @NgModule({

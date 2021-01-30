@@ -18,6 +18,7 @@ export class Students {
         this.matNumber = matNum;
         this.studentName = studName;
         this.coursesArray = courseAry;
+        this.calGPA();
     };
 
     // Sum of Course Points

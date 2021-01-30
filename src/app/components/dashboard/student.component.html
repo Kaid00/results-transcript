@@ -3,7 +3,7 @@
 <div class="grid grid-pad">
         <ul class="students">
             <!-- <a  routerLink="/student"> -->
-                <li *ngFor="let studentData of studentData" (click)="onSelect(studentData)"> 
+                <li *ngFor="let studentData of studentData" (click)="onSelect(studentData)" routerLink = "/infor/{{studentData.studentName}}" > 
                     <div>
                         {{studentData.studentName}}
                     </div>
@@ -13,5 +13,8 @@
 
 </div>
 
+
+
 <!--One way binding between dasboard component and student-details component-->
 <app-student-details [student] = "selectedStudent"></app-student-details>
+

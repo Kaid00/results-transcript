@@ -1,5 +1,3 @@
-import { Students } from './Students';
-import { ClassMethod } from "@angular/compiler";
 
 export class Courses {
     courseCode:string;
@@ -13,6 +11,9 @@ export class Courses {
         this.courseCode = crsCode;
         this.creditValue = credVal;
         this.score = score;
+        this.calCoursePoint();
+        this.getCreditVal();
+        this.getGradePoint();
     };
 
     calCoursePoint() {

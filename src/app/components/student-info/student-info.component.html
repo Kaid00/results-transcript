@@ -4,7 +4,7 @@
         <th>Name</th>
         <th>Mat number</th>
     </tr>
-    <tr *ngFor="let studentData of studentData">
+    <tr *ngFor="let studentData of studentData" (click) = "onSelect(studentData)" routerLink ="/transcript}}">
         <td >
             {{studentData.studentName}} 
         </td>
@@ -14,3 +14,7 @@
     </tr>
     
 </table>
+
+<app-student-details [student] = "selectedStudent"></app-student-details>
+
+<router-outlet></router-outlet>

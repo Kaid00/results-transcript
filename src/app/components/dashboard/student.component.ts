@@ -9,17 +9,18 @@ import { StudentService } from './../../services/student.service';
   templateUrl: './student.component.html',
   styleUrls: ['./student.component.css']
 })
+
 export class StudentComponent implements OnInit {
 
   studentData: Students[];
   gpaData: number[];
 
-  selectedStudent: Students; // stores the selected student from the list of students
+  selectedStudent: Students | undefined; // stores the selected student from the list of students
 
-  // Inject the Service
+// Inject the Service
   constructor(private studentService: StudentService) {}
 
-
+// Getting selected student from student list
   onSelect(students:Students):void {
     this.selectedStudent = students;
   }
@@ -30,10 +31,7 @@ export class StudentComponent implements OnInit {
       .subscribe(studentData => this.studentData = studentData);
   }
   
-  // Getting Gpa array from service
-
   ngOnInit(): void {
-    // Initialise the function when the dashboard component is intanciated
     this.getStudentData();
     
   }

@@ -1,9 +1,10 @@
+import { Students } from './../data/Students';
 
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
-import { Students } from '../data/Students';
+
 import { StudentData } from '../data/data-mockup';
 
 @Injectable({
@@ -19,5 +20,9 @@ export class StudentService {
   getStudent(): Observable<Students[]> {
     return of(StudentData);
   }
+
+  // getStudent(): Observable<Students[]>{
+  //   return this.http.get<Students[]>(this.studentUrl)
+  // }
 
 }
